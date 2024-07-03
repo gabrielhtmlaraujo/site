@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'GYM';
+    src: url(../fontes/Praktika-Light.otf) format(opentype)
+}
+
+:root {
+    --cor0: rgba(0, 89, 0, 0.6);
+    --fontepadrao:"Bebas Neue", sans-serif;
+    --fonteGYM: 'GYM'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(0, 89, 0, 0.6);
+    
+}
+
+header {
+    background-image: linear-gradient(to bottom, darkgreen, rgb(30, 60, 0));
+    min-height: 150px;
+    text-align: center;
+
+}
+
+nav {
+    background-color: rgb(30, 60, 0);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+
+}
+
+nav a:hover {
+    background-color: darkgreen;
+    color: rgb(30, 60, 0);
+
+}
+
+
+
+header > h1 {
+    font-family: 'GYM';
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.73);
+}
+
+header > p {
+    color: beige;
+    font-family: var(--fonteGYM), arial;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.73);
+}
+
+
+
+main {
+    background-color: white;
+    min-width: 280px;
+    max-width: 1028px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+a.stronger {
+    font-weight: bold;
+    color: green;
+    text-decoration: none;
+    background-color: rgba(0, 100, 0, 0.29);
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+a.stronger::after {
+    content: '\00A0\00A0\🔗';
+}
+
+.stronger:hover {
+    color: white;
+    transition-duration: 0.3s;
+    background-color: rgba(0, 100, 0, 0.516);
+}
+
+main h2 {
+    font-family: var(--fonteGYM);
+    background-image: linear-gradient(to right,rgba(0, 100, 0, 0.419),transparent);
+    border-radius: 7px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+img {
+    width: 100%;
+}
+
+main  h1 {
+    font-family: 'GYM';
+    font-size: 40px;
+}
+
+main p {
+    font-family: 'GYM';
+}
+
+main img .pequeno.img {
+    width: 30%;
+    margin: auto;
+}
+
+div.video {
+    background-color: darkgreen;
+    position: relative;
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+aside {
+    background-color: rgba(0, 100, 0, 0.221);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.223);
+}
+ 
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\✅\00A0\00A0';
+}
+
+aside > h3 {
+    font-family: var(--fonteGYM);
+    background-color: rgba(0, 100, 0, 0.505);
+    margin: -10px -10px 0px -10px;
+    padding: 7px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+aside > ul >li {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: var(--fonteGYM);
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(70, 255, 70, 0.608)
+
+}
+
+footer a:hover {
+    color: white;
+    transition-duration: 0.5s;
+    
+
+}
+
